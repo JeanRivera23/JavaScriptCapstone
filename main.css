@@ -19,18 +19,18 @@ body {
 .gameContainer {
   position: absolute;
   margin: auto;
-  top: 30px;
-  left: 120px;
-  background-image: url("https://img.clipartfox.com/eaf06a51efe95b192dc787ed62bb7547_clouds-svg-cartoon-clouds-clipart_600-316.png");
+  top: 20px;
+  left: 50px;
+  background-image: url("images/cloud.png");
   background-repeat: no-repeat;
-  width: 600px;
-  height: 400px;
+  width: 700px;
+  height: 369px;
 }
 
 .moon img {
   position: relative;
   top: 0px;
-  left: 0px;
+  left: -50px;
   width: 400px;
   height: 398px;
 }
@@ -38,25 +38,28 @@ body {
 .wordContainer {
   position: absolute;
   margin: auto;
-  top: 130px;
+  top: 150px;
   left: 150px;
-  width: 300px;
+  width: 400px;
   height: 100px;
+  text-align: center;
+}
+
+#hint {
+  position: absolute;
+  margin: auto;
+  top: 55px;
+  width: 400px;
+  height: 37px;
+  text-align: center;
 }
 
 .wrongLetters {
-  position: fixed;
-  top: 500px;
-  left: 20px;
-  /*background-image: url("http://img13.deviantart.net/4d65/i/2011/324/f/1/black_hole_by_pjillustrator-d4grj9l.png");*/
-}
-
-.blackHole img {
-  position: fixed;
-  top: 400px;
-  left: 0px;
+  position: absolute;
+  margin: auto;
+  left: 250px;
   width: 400px;
-  height: 300px;
+  height: 100px;
 }
 
 h2 {
@@ -77,6 +80,24 @@ span {
   background-color: #FFA500;
 }
 
+#gameOver {
+  position: absolute;
+  margin: auto;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 500px;
+  height: 500px;
+}
+
+#gameOver img {
+  width: 500px;
+  height: 500px;
+}
+
+
+/*buttons*/
 
 #skipBtn, #startBtn{
   position: absolute;
@@ -87,53 +108,21 @@ span {
   width: 100px;
   height: 40px;
   border-radius: 10px;
-
 }
 
+button {
+  background-color: #FFA500;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  font-family: 'Space Mono', monospace;
+  border: 3px groove white;
+  font-size: 20px;
+}
 
-#modal {
+#startBtn {
   position: absolute;
   margin: auto;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-color: gray;
-  padding: 30px 30px 25px 30px;
-  width: 600px;
-  height: 300px;
-}
-
-#modal h1 {
-  margin-top: 20px;
-  margin-left: 20px;
-  font-size: 25px;
-  position: absolute;
-  top: 70px;
-  left: 50px;
-}
-
-#modal ul {
-  position: absolute;
   top: 180px;
-  left: 50px;
-}
-
-#close {
-  position: absolute;
-  left: 290px;
-  padding-bottom: 10px;
-}
-
-#closeBtn {
-  border: none;
-  font-size: 14px;
-}
-
-#planet img {
-  position: relative;
-  left: -100px;
-  top: -130px;
-  width: 250px;
-  height: 250px;
+  left: 315px;
 }
